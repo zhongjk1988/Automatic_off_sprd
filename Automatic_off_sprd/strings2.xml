@@ -1,0 +1,78 @@
+<collection shelf="New Arrivals">
+<movie title="time">
+	<string name="startTime">2018-08-26 17:47:44</string>
+    <string name="endTime">2018-08-26 21:15:18</string>
+</movie>
+<movie title="main">
+	<string name="57:">irq: 57</string>
+    <string name="58:">irq: 58</string>
+	<string name="178:">irq: 178</string>
+	<string name="174:">irq: 174</string>
+	<string name="亮屏:">", ON</string>
+	<string name="灭屏:">", OFF</string>
+	<string name="接收微聊:">receiverChatMsg--1</string>
+	<string name="发送微聊:">MsgService: {MsgService$</string>
+	<string name="播放微聊:">start play voice</string>
+	<string name="定位:">beginLocation--1</string>
+	<string name="通话:">bbklhj--chanageCallView</string>
+	<string name="来电:">: onSuccessfulIncomingCall</string>
+<!--	<string name="Diag_Lib:">Diag_Lib</string> -->
+	<string name="超时:">heartbeat no response on time</string>
+	<string name="超时:">tcp is disconnect,disconnectType: 1</string>
+	<string name="切网:">action:android.net.conn.CONNECTIVITY_CHANGE</string>
+	<string name="第三方网络请求:">allowed status for</string> 
+	<string name="IM失败">connect fail,error msg</string>
+	<string name="心跳:">atInfo is</string>
+	<string name="IM失败2">tcp connect failed</string>
+	<string name="心跳2:">receive heartbeat</string>
+	<string name="心跳3:">send broadcast on heartbeat response successful</string>
+	<string name="BDS:">BDSMessageConversionUtility</string>
+	<string name="wifi扫描:">wlan0: State: SCANNING</string>
+	<string name="healthd:">healthd</string>
+	<string name="音频播放:">MediaPlayer: start</string>
+	<string name="AP唤醒CPU:">acquireWakeLockInternal:</string>
+	<string name="AP释放锁:">releaseWakeLockInternal:</string>
+	<string name="灭屏:">Screen off to</string>
+	<string name="亮屏:">Screen on to</string>
+	<string name="通话时长:">call elapsed time</string>
+	<string name="sensors:">activate sensors</string>
+	<string name="打开GPS:">Call open_gps name</string>
+	<string name="关闭GPS:">gps_cleanup: clear init</string>
+	<string name="外部设备开关:">Global.putString(name=</string>
+	<string name="电量:">ACTION_BATTERY_CHANGED</string>
+	<string name="视频通话:">通话时长</string>
+	<string name="视频通话:">通话总时长</string>
+	<string name="wifi异常扫描:">CTRL_IFACE SET 'pno'='1'</string>
+	
+<!--	<string name="active激活时间:">RRCTime</string> -->
+</movie>
+<movie title="radio">
+	<string name="modem active:">LIST_CHANGED [D</string>
+	<string name="modem active 0:">DEACTIVATE_DATA_CALL 0</string>
+    <string name="数据连接状态:">getDataConnec</string>
+	<string name="语音网络:">VOICE_REGISTRATION_STATE</string>
+	<string name="数据网络:">DATA_REGISTRATION_STATE</string>
+	<string name="网络制式:">dataRadioTechnology</string>
+</movie>
+
+<movie title="kernel">
+	<string name="wifi锁:">Not able to suspend wlan</string>
+    <string name="modem重启:">Starting restart sequence for modem</string>
+	<string name="usb中断:">SMB:usbin_uv_handler</string>
+	<string name="系统休眠:">PM: suspend entry</string>
+	<string name="中断唤醒:">PM: suspend exit</string>
+<!--	<string name="锁唤醒:">active wakeup source</string> -->
+</movie>
+
+<movie title="targetDirectory">
+	<string name="target">E:\Automatic</string>
+	<string name="result">E:\Automatic</string>
+</movie>
+<movie title="key">
+	<string name="qcom">audit(</string>
+    <!--<string name="MTK">android time</string>-->
+</movie>
+<movie title="timeConversion">
+	<string name="doing">true</string>
+</movie>
+</collection>
