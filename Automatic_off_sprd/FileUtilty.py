@@ -243,6 +243,10 @@ def readMainFiles(filenamelits,startTime,endTime,keyword,year,resultDirectory):
     mobile_data_time = ""
     mobile_data_All_time = 0
 
+    #保存视频通话时长和次数
+    videoChat_Time = 0
+    videoChat_Num = 0
+
     #判断是不是展讯平台
     isSprd = False
     moreTag_dict = OrderedDict()
@@ -306,6 +310,12 @@ def readMainFiles(filenamelits,startTime,endTime,keyword,year,resultDirectory):
                             #视频通话时长输出到文本
                             if str.encode(r'通话总时长') in line or str.encode(r'通话时长') in line:
                                 fd_main.writelines(str(line,encoding='utf-8'))
+                            if str.encode(r'通话总时长') in line:
+                                time = str(line).split("during = ")[1]
+                                time = str(time).replace(r"\n'","")
+                                videoChat_Num += 1
+                                videoChat_Time += int(time)
+                                
                             #输出所有的心跳信息到文本
                             if r"atInfo is" == key or r"receive heartbeat" == key or r"send broadcast on heartbeat response successful" == key:
                                 #currentTime = year+"-"+str(line)[2:16]
@@ -482,6 +492,12 @@ def readMainFiles(filenamelits,startTime,endTime,keyword,year,resultDirectory):
            gpsAllTime = gpsAllTime + Time.DuractionTime(year,gpsOpenTime,Time.TimeTimestampTransfer(endTime))
         otherData["gps"] = [gpsAllTime,gpsAllNum]
         gpsOpenTime = 0
+    #*****************************************************************************************************************************
+    #把视频通话的时长和次数统计添加到列表otherData里面
+    #
+    if(videoChat_Num != 0 or videoChat_Time!= 0):
+
+        otherData["视频通话时长"] = [videoChat_Time/1000,videoChat_Num]
     #*****************************************************************************************************************************
     '''
     统计wifi的运行时间

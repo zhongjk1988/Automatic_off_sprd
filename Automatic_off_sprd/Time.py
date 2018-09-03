@@ -18,7 +18,6 @@ def TimeTransferTimestamp(dt):
         myTime = myTime + i
     if str(myTime).count("-") > 2:
         myTime = MyString.replace(myTime,13,16,":")
-    
     timeArray = time.strptime(str(myTime), "%Y-%m-%d %H:%M:%S")
     #转换成时间戳
     timestamp = time.mktime(timeArray)
